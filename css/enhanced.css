@@ -1,0 +1,38 @@
+.inner {
+    height: 600px;
+ }   
+
+.slide {
+  height: 600px;
+}
+
+.stove, 
+.bbq {
+  position: absolute;
+  right: 0;
+}
+
+ .text-block {
+  margin: 3% 3em 3em 7%;
+  padding: 2em;
+  float: left;
+  width: 28%;
+}
+
+.text-block h1 {
+  font-size: 54px;
+}
+
+.stove, 
+.bbq {
+  right: 0;
+}
+
+.stove-block,
+.bbq-block {
+  position: absolute;
+  right: 20%;
+  top: 3%;
+  width: 700px;
+  height: 560px; 
+}

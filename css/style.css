@@ -1,0 +1,268 @@
+
+/* typography  */
+
+h1, p 
+{
+    font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  font-family: sans-serif;
+}
+
+/* animated items  */
+
+.stove, 
+.bbq {
+  animation: fadeIn 2s;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+
+.bbq-accessory,
+.pizza-oven {
+  animation: fadeIn 6s; 
+}
+
+.fade-1 {
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+
+.fade-2 {
+  animation-name: fadeIn;
+  animation-duration: 6s;
+}
+
+.slide.one .text-block {
+  animation-name: fadeIn;
+  animation-duration: 6s;
+}
+.slide.two .text-block {
+  animation-name: fadeIn;
+  animation-duration: 7s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity:0; }
+  100% { opacity: 1; }
+}
+
+/* slider  */
+
+.bx-wrapper {
+  background: none;
+  border: none;
+}
+
+/* items */
+
+.container {
+  background: url('../images/bg.gif');
+  background-size: cover;
+}
+
+.inner {
+    width: 100%;
+    height: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,238,238,0) 50%, rgba(2,0,36,1) 100%);
+}
+
+.slide {
+  height: auto;
+}
+
+.text-block {
+  position: relative;
+  margin: 3em 0;
+  text-align: center;
+  color: #fff;
+}
+
+.text-block h1 {
+  font-size: 34px;
+}
+.text-block p {
+  font-size: 18px;
+  padding: 0 3em 1.2em 3em;
+}
+.text-block .button {
+  display: inline-block;
+  background: #f67f00;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: .5em 1.5em;
+  margin: .25em;
+  text-transform: uppercase;
+  transition: .3s transform;
+}
+
+.text-block .button:hover {
+  transform: translateY(-5px);
+}
+
+.links-block {
+  margin-bottom: 2em;
+}
+.links-block a {
+  color: #ededed;
+  line-height: 1.8;
+}
+.links-block a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.stove-block,
+.bbq-block {
+  position: relative;
+  margin: 0 auto;
+  width: 560px;
+  height: 560px; 
+}
+
+.bbq-accessory {
+  position: absolute;
+  top: 23%;
+  right: 29%;
+  width: 183px;
+}
+.pizza-oven {
+  position: absolute;
+  top: 55%;
+  right: 3%;
+}
+
+
+/* home page links */
+
+.tip-container {
+  position: absolute;
+  width: 800px;
+  top: 0;
+  right: 20%
+}
+
+a.cat-tip {
+  color: #fff;
+}
+a.cat-tip:hover {
+  color: rgba(255,255,255,0.8)
+}
+.cat-tip {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', san-serif;
+    padding: 8px 15px;
+    font-size: 19px;
+    position: absolute;
+    background: #c5161d;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 20px;
+    transition: .3s transform;
+}
+.cat-tip-left::after{
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    margin-top: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #c5161d;
+}
+.cat-tip-right::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    margin-top: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #c5161d;
+}
+.cat-tip-right:hover {
+    transform: translateX(5px);
+}
+.cat-tip-left:hover {
+    transform: translateX(-5px);
+}
+
+/* -- individual links -- */
+
+/* slide one  */
+.cat-tip.fireplaces {
+  right: -17%;
+  top: 14%;
+}
+
+.cat-tip.accessories {
+  right: 54%;
+  top: 24%;
+}
+.cat-tip.rparts {
+  right: -18%;
+  top: 45%;
+}
+.cat-tip.chimney {
+  right: 40%;
+  top: 3%;
+}
+
+.cat-tip.blowers {
+  right: 5%;
+  top: 75%;
+}
+
+/* slide two */
+.cat-tip.bbq-accessories {
+  right: 5%;
+  top: 23%;
+}
+.cat-tip.bbq-rparts {
+  right: 60%;
+  top: 37%;
+}
+.cat-tip.bbqs-smokers {
+  right: -7%;
+  top: 5%;
+}
+
+.cat-tip.pizza-ovens {
+  right: 35%;
+  top: 69%;
+}
+
+
+@media only screen and (max-width: 800px) { 
+
+  .stove-block,
+  .bbq-block {
+    display: none;
+  }
+
+  .text-block p {
+    font-size: 16px;
+  }
+
+  .slide.one .text-block,
+  .slide.two .text-block  {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  }
+
+
+}
+
+
+
+
